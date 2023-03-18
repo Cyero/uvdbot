@@ -1,0 +1,10 @@
+__pycache__/
+*/__pycache__
+.idea/
+.vscode/
+users/*
+!users/.usersdir
+src/*
+!src/.srcdir
+env/
+.env
