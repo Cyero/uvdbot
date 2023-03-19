@@ -44,6 +44,7 @@ async def download_all(callback: CallbackQuery, state: FSMContext) -> None:
             await callback.message.answer("Sorry, the service is temporarily unavailable. Please try later",
                                           reply_markup=kb_cancel.as_markup())
             error = True
+            break
     if not error:
         await callback.message.answer("All links have been processed. Downloaded videos are ready to be sent. "
                                       " Click the button below to continue:", reply_markup=kb_done.as_markup())
