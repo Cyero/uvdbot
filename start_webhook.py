@@ -8,12 +8,12 @@ from aiogram.webhook.aiohttp_server import (SimpleRequestHandler, setup_applicat
 from handlers import register_handlers
 
 
-async def on_startup(bot: Bot):
+async def on_startup(bot: Bot) -> None:
     register_handlers(rt)
     await bot.set_webhook(f"{getenv('SITEURL')}/{getenv('TOKEN')}")
 
 
-def main():
+def run_bot() -> None:
     dp["base_url"] = getenv('SITEURL')
     dp.startup.register(on_startup)
     app = Application()
@@ -25,4 +25,4 @@ def main():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARN, filename='./src/log.txt')
-    main()
+    run_bot()
