@@ -13,7 +13,7 @@ To run this project, you will need to add the following environment variables to
 
 `APPHOST` - IP for listening (defaults to '127.0.0.1' if not provided)
 
-`APPPORT` - Port for listening. For deploy it`s taken auto from host provider (defaults to 5000 if not provided)
+`APPPORT` - Port for listening. For deploy it`s taken auto from host provider (defaults to 8081 if not provided)
 ## Run Locally (polling)
 Install Redis-server
 
