@@ -20,7 +20,7 @@ def run_bot() -> None:
     app["bot"] = bot
     SimpleRequestHandler(dispatcher=dp, bot=bot).register(app, path=f"/{getenv('TOKEN')}")
     setup_application(app, dp, bot=bot)
-    run_app(app, host=f"{getenv('APPHOST')}", port=int(f"{getenv('APPPORT', 8081)}"))
+    run_app(app, host=f"{getenv('APPHOST'), '127.0.0.1'}", port=int(f"{getenv('APPPORT', 8081)}"))
 
 
 if __name__ == "__main__":
