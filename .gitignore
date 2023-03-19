@@ -8,3 +8,4 @@ src/*
 !src/.srcdir
 env/
 .env
+.DS_Store

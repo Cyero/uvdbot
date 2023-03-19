@@ -1,7 +1,7 @@
 import asyncio
 import logging
-from bot_init import bot, rt, dp
-from handlers import register_handlers
+from bot_init import (bot, rt, dp)
+from handlers import (register_handlers)
 
 
 async def start() -> None:
